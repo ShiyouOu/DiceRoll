@@ -5,10 +5,17 @@
       <h4 class="my-0 font-weight-normal">D4</h4>
     </div>
     <div class="card-body">
+      <img
+        src="https://stackblitz.com/files/angular-ivy-kda9zv/github/ShiyouOu/DiceRoll/main/src/d4.png"
+      />
       <h1 class="card-title pricing-card-title">
-        <small class="text-muted">Results: </small>
+        <small class="text-muted">Results: {{ dice[0].result }}</small>
       </h1>
-      <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+      <button
+        type="button"
+        class="btn btn-lg btn-block btn-outline-primary"
+        (click)="rollDice('d4')"
+      >
         Roll
       </button>
     </div>
@@ -18,10 +25,17 @@
       <h4 class="my-0 font-weight-normal">D6</h4>
     </div>
     <div class="card-body">
+      <img
+        src="https://stackblitz.com/files/angular-ivy-kda9zv/github/ShiyouOu/DiceRoll/main/src/d6.png"
+      />
       <h1 class="card-title pricing-card-title">
-        <small class="text-muted">Results: </small>
+        <small class="text-muted">Results: {{ dice[1].result }}</small>
       </h1>
-      <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+      <button
+        type="button"
+        class="btn btn-lg btn-block btn-outline-primary"
+        (click)="rollDice('d6')"
+      >
         Roll
       </button>
     </div>
@@ -31,10 +45,17 @@
       <h4 class="my-0 font-weight-normal">D8</h4>
     </div>
     <div class="card-body">
+      <img
+        src="https://stackblitz.com/files/angular-ivy-kda9zv/github/ShiyouOu/DiceRoll/main/src/d8.png"
+      />
       <h1 class="card-title pricing-card-title">
-        <small class="text-muted">Results: </small>
+        <small class="text-muted">Results: {{ dice[2].result }}</small>
       </h1>
-      <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+      <button
+        type="button"
+        class="btn btn-lg btn-block btn-outline-primary"
+        (click)="rollDice('d8')"
+      >
         Roll
       </button>
     </div>
@@ -46,10 +67,17 @@
       <h4 class="my-0 font-weight-normal">D12</h4>
     </div>
     <div class="card-body">
+      <img
+        src="https://stackblitz.com/files/angular-ivy-kda9zv/github/ShiyouOu/DiceRoll/main/src/d12.png"
+      />
       <h1 class="card-title pricing-card-title">
-        <small class="text-muted">Results: </small>
+        <small class="text-muted">Results: {{ dice[3].result }}</small>
       </h1>
-      <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+      <button
+        type="button"
+        class="btn btn-lg btn-block btn-outline-primary"
+        (click)="rollDice('d12')"
+      >
         Roll
       </button>
     </div>
@@ -59,10 +87,17 @@
       <h4 class="my-0 font-weight-normal">D20</h4>
     </div>
     <div class="card-body">
+      <img
+        src="https://stackblitz.com/files/angular-ivy-kda9zv/github/ShiyouOu/DiceRoll/main/src/d20.png"
+      />
       <h1 class="card-title pricing-card-title">
-        <small class="text-muted">Results: </small>
+        <small class="text-muted">Results: {{ dice[4].result }}</small>
       </h1>
-      <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+      <button
+        type="button"
+        class="btn btn-lg btn-block btn-outline-primary"
+        (click)="rollDice('d20')"
+      >
         Roll
       </button>
     </div>
