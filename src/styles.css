@@ -43,7 +43,6 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
 @-ms-viewport {
@@ -73,6 +72,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  overflow-x: hidden;
 }
 [tabindex='-1']:focus {
   outline: 0 !important;
@@ -8290,3 +8290,18 @@ a.text-dark:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+.subtract-label {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.add-label {
+  position: absolute;
+  top: 40%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}

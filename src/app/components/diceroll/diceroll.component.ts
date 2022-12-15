@@ -25,6 +25,22 @@ export class DicerollComponent implements OnInit {
     }
   }
 
+  addDice(diceId) {
+    let foundDie: number = this.getDiceById(diceId);
+
+    if (foundDie != -1) {
+      this.dice[foundDie].addDice();
+    }
+  }
+
+  subtractDice(diceId) {
+    let foundDie: number = this.getDiceById(diceId);
+
+    if (foundDie != -1) {
+      this.dice[foundDie].subtractDice();
+    }
+  }
+
   ngOnInit() {
     this.dice.push(new Dice('d4', 4));
     this.dice.push(new Dice('d6', 6));
