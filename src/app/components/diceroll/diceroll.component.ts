@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Dice } from './Dice';
 
 @Component({
   selector: 'my-app',
@@ -20,11 +21,7 @@ export class DicerollComponent implements OnInit {
     let foundDie: number = this.getDiceById(diceId);
 
     if (foundDie != -1) {
-      this.dice[foundDie].result = 0;
-      for (let num = 0; num < this.dice[foundDie].amount; num++) {
-        this.dice[foundDie].result +=
-          Math.floor(Math.random() * this.dice[foundDie].sides) + 1;
-      }
+      this.dice[foundDie].roll();
     }
   }
 
@@ -34,17 +31,5 @@ export class DicerollComponent implements OnInit {
     this.dice.push(new Dice('d8', 8));
     this.dice.push(new Dice('d12', 12));
     this.dice.push(new Dice('d20', 20));
-  }
-}
-
-class Dice {
-  amount: number = 1;
-  result: number = 0;
-  id: string;
-  sides: number;
-
-  constructor(id, sides) {
-    this.id = id;
-    this.sides = sides;
   }
 }
